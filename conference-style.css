@@ -1,0 +1,10 @@
+.jumbotron {
+    background-color: #FD393E;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #5DDB56, #067E00);
+    font-family: 'Maven Pro', sans-serif;
+}

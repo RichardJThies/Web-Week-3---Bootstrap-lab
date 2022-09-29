@@ -1,0 +1,23 @@
+.jumbotron {
+    background-color: #FF7400;
+    color: #082568;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    /*font-size: 46px; ended up changing the font in the html*/ 
+    
+}
+
+body {
+    background-color: #598B90;
+    color: #FFAA64;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.screenshots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /*border: 5px double;*/ 
+}
+

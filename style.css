@@ -1,0 +1,24 @@
+body {
+    background-color: lightgray;
+}
+
+.missile-link {
+    background-color: lightgray;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+#real-alert {
+    background-color: lightcoral;
+    color: maroon;
+    border: 5px double;
+    font-size: 18px;
+}
+
+#test-only {
+background-color: lightcyan;
+color: indigo;
+border: 5px dotted;
+font-size: 44px;
+}

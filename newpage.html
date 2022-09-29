@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Hello Forms</title>
+    </head>
+    <body>
+    <form>
+        <label for="userName" >Enter you name:</label>
+            <input id="userName" required type="text">
+
+        <br>
+        <label for="favoriteNum">What is your favorite number?</label>
+            <input id="favoriteNum" type="number" value="0">
+
+        <br>
+        <textarea id="comments" rows="20" cols="40">Default text here</textarea>
+
+        <br>
+        <label for="numChoice"> What number?
+        <select> 
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        </label>
+        
+        <br>
+        <label>Yes or no?</label>
+            <input id="YesAnswer" name="radiochoice" type="radio">
+                <label for="YesAnswer">YES</label>
+            <input id="NoAnswer" name="radiochoice" type="radio" checked>
+                <label for="NoAnswer">NO</label>
+
+        <br>
+        <label>Green or red?</label>
+            <input id="greenAnswer" name="colorchoice" type="radio">
+                <label for="greenAnswer">Green</label>
+            <input id="redAnswer" name="colorchoice" type="radio" checked>
+                <label for="redAnswer">Red</label>
+
+        <br>
+        <label for="checkboxQuestion">Checkbox test</label>
+            <input type="checkbox">
+        
+        <br>
+        <input type="submit">
+    </body>
+    </form>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conference Registration Form</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="conference-style.css">
+    </head>
+    
+    <body class="m-3">
+    <form>
+        <div class="jumbotron">
+            <h1>This form is for conference registration.</h1>
+        </div>
+
+        <div class="mx-5">
+            <label for="attendeeName">Enter your name:</label>
+                <input id="attendeeName" name="Name-of-Attendee" maxlength="70" required type="text">
+        </div>
+
+        <div class="mx-5">
+            <label for="attendeePassword">Enter your password:</label>
+                <input id="attendeePassword" name="Password-of-Attendee" required type="password">
+        </div>
+
+        <div class="mx-5">
+            <label for="attendeeEmail">Enter your email:</label>
+                <input id="attendeeemail" name="email-of-Attendee" required type="email">
+        </div>
+
+        <div class="mx-5">
+            <label for="T-shirt-Size">All attendees shall receive a free T-shirt at the conference. What size would you like?
+                <Select id="T-shirt-Size" required name="attendee-T-shirt-Size"> <!--How do you make a select input required? Where do you add the name and id attributes to the select?-->
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </Select>
+            </label>
+        </div>
+
+        <div class="mx-5">
+            <label for="birthDate">What is your date of birth?</label>
+                <input id="birthDate" name="birth-date-of-Attendee" required type="date">
+        </div>
+
+        <div class="mx-5"> <!--Maybe i'm confusing myself, but how do you connect the 'for' label with the input ids? They are supposed to be unique right?-->
+            <label for="email-updates">Would you like to receive email updates concerning the conference?</label> <!--Do you need names for every ratio input?-->
+                <input id="updateYes" name="emailUpdate" type="radio">
+                    <label for="updateYes">Yes</label>
+                <input id="updateNo" name="emailUpdate" type="radio">
+                    <label for="updateNo">No</label>
+        </div>
+
+        <div class="mx-5">
+            <label for="sessionChoice">We shall be having two sessions of the conference, one in the morning and the other in afternoon? Which will you be attending?</label>
+                <br>
+                <label>The morning session:</label> <!--same here how do you connect the 'for' label with the input ids?-->
+                    <input id="Session-morning" name="attendeeSession" type="checkbox"> 
+                <br>
+                <label>The afternoon session:</label>
+                    <input id="Session-afternoon" name="attendeeSession" type="checkbox">
+        </div>
+
+        <div class="mx-5">
+            <label for="requests">Do you have any special requests for us?</label>
+            <br>
+            <textarea id="requests" name="attendee-Requests" id="requests" cols="70" rows="7"></textarea>
+        </div>
+
+        <div class="mx-5">
+            <input id="form-submit" name="attendee-Submission" type="submit" class="btn btn-primary mt-5" > 
+            <!--instructions said every input, but do you need a id and name for the submit? Do you need a label with a for?-->
+        </div>
+    </form>
+    </body>
+</html>
